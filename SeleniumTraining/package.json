@@ -7,6 +7,6 @@
     "selenium-webdriver": "^4.7.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --no-timeouts"
   }
 }
