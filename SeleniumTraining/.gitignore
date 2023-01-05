@@ -2,4 +2,4 @@
 package-lock.json
 
 # Ignore all files with the specified name.
-node_modules
+/node_modules/
