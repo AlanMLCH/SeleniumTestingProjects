@@ -1,4 +1,5 @@
-node_modules;
+# Ignore all files with the specified name.
+package-lock.json
 
-package-lock.js;
-
+# Ignore all files with the specified name.
+node_modules
