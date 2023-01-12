@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 3,
+    "tests": 4,
     "passes": 1,
     "pending": 0,
-    "failures": 2,
-    "start": "2023-01-09T07:55:01.129Z",
-    "end": "2023-01-09T07:55:13.217Z",
-    "duration": 12088,
-    "testsRegistered": 3,
-    "passPercent": 33.33333333333333,
+    "failures": 3,
+    "start": "2023-01-12T05:42:06.527Z",
+    "end": "2023-01-12T05:42:18.641Z",
+    "duration": 12114,
+    "testsRegistered": 4,
+    "passPercent": 25,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cfd25e40-3217-4d46-9059-c2b5f0b6c012",
+      "uuid": "d2d6fa68-c4c5-41b1-9d41-8bccf95778a0",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,50 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "12bba539-87ab-4000-8111-550a0188a0cd",
-          "title": "add todo tests",
-          "fullFile": "C:\\Selenium\\SeleniumTestingProjects\\SeleniumTraining\\test3.js",
-          "file": "\\test3.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "succesfully adds a todo application",
-              "fullTitle": "add todo tests succesfully adds a todo application",
-              "timedOut": null,
-              "duration": 1711,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "//Launch Browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n        \n//To fetch some url.\nawait driver?.get(\"https://www.selenium.dev/selenium/web/web-form.html\");\n\n// To send a search query by passing the value in searchString.\nawait driver\n?.findElement(By?.css('.form-control[name=\"my-textarea\"]'))\n?.sendKeys(searchString,Key.RETURN);\n//assertion\nlet todoText = await driver\n?.findElement(By?.css('[name=\"my-select\"] [selected]'))\n?.getText()\n.then(function(value){\n        return value\n});\n        \n// //assertion Node\n// assert.strictEqual(todoText, \"Three\")\n//assert using chai should\ntodoText.should.equal(\"Three\");\n//Something to do \nawait new Promise(res => setTimeout(res, 10000));\nlet title = await driver.getTitle();\nconsole.log('Title is:',todoText);\n        \n//Close the browser\nawait driver.quit();",
-              "err": {
-                "message": "AssertionError: expected 'Open this select menu' to equal 'Three'",
-                "estack": "AssertionError: expected 'Open this select menu' to equal 'Three'\n    at Context.<anonymous> (test3.js:41:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
-                "diff": "- Open this select menu\n+ Three\n"
-              },
-              "uuid": "39f9c23a-3234-42dc-b2eb-5b6cc3901f19",
-              "parentUUID": null,
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [
-            "39f9c23a-3234-42dc-b2eb-5b6cc3901f19"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 1711,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": null
-        },
-        {
-          "uuid": "9f546992-1578-4944-b29c-01de049f29f8",
+          "uuid": "8067588a-408a-440a-90ee-d6bdb7ed5af3",
           "title": "add todo tests",
           "fullFile": "C:\\Selenium\\SeleniumTestingProjects\\SeleniumTraining\\index.js",
           "file": "\\index.js",
@@ -81,7 +38,7 @@
               "title": "succesfully adds a todo application",
               "fullTitle": "add todo tests succesfully adds a todo application",
               "timedOut": null,
-              "duration": 1814,
+              "duration": 1576,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -94,7 +51,7 @@
                 "estack": "AssertionError: expected 'Open this select menu' to equal 'Three'\n    at Context.<anonymous> (index.js:41:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
                 "diff": "- Open this select menu\n+ Three\n"
               },
-              "uuid": "5242343b-5e25-4bcb-9b45-57377603a48b",
+              "uuid": "6bcee1fa-7d7e-4672-a27a-328af5580fd9",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -103,20 +60,86 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5242343b-5e25-4bcb-9b45-57377603a48b"
+            "6bcee1fa-7d7e-4672-a27a-328af5580fd9"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1814,
+          "duration": 1576,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
         },
         {
-          "uuid": "fe722d2a-2138-49b4-a5b7-da76b090c01d",
+          "uuid": "b88c7441-99dd-4c4c-b9a0-285836cc3cd4",
+          "title": "add todo tests",
+          "fullFile": "C:\\Selenium\\SeleniumTestingProjects\\SeleniumTraining\\test\\test3.js",
+          "file": "\\test\\test3.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "succesfully adds a todo application",
+              "fullTitle": "add todo tests succesfully adds a todo application",
+              "timedOut": null,
+              "duration": 1575,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Launch Browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n        \n//To fetch some url.\nawait driver?.get(\"https://www.selenium.dev/selenium/web/web-form.html\");\n\n// To send a search query by passing the value in searchString.\nawait driver\n?.findElement(By?.css('.form-control[name=\"my-textarea\"]'))\n?.sendKeys(searchString,Key.RETURN);\n//assertion\nlet todoText = await driver\n?.findElement(By?.css('[name=\"my-select\"] [selected]'))\n?.getText()\n.then(function(value){\n        return value\n});\n        \n// //assertion Node\n// assert.strictEqual(todoText, \"Three\")\n//assert using chai should\ntodoText.should.equal(\"Three\");\n//Something to do \nawait new Promise(res => setTimeout(res, 10000));\nlet title = await driver.getTitle();\nconsole.log('Title is:',todoText);\n        \n//Close the browser\nawait driver.quit();",
+              "err": {
+                "message": "AssertionError: expected 'Open this select menu' to equal 'Three'",
+                "estack": "AssertionError: expected 'Open this select menu' to equal 'Three'\n    at Context.<anonymous> (test\\test3.js:41:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": "- Open this select menu\n+ Three\n"
+              },
+              "uuid": "2e466fc0-5b00-4d48-82e3-fd39df149846",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "succesfully adds a todo application",
+              "fullTitle": "add todo tests succesfully adds a todo application",
+              "timedOut": null,
+              "duration": 1649,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Launch Browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n        \n//To fetch some url.\nawait driver?.get(\"https://www.selenium.dev/selenium/web/web-form.html\");\n\n// To send a search query by passing the value in searchString.\nawait driver\n?.findElement(By?.css('.form-control[name=\"my-textarea\"]'))\n?.sendKeys(searchString,Key.RETURN);\n//assertion\nlet todoText = await driver\n?.findElement(By?.css('[name=\"my-select\"] [selected]'))\n?.getText()\n.then(function(value){\n        return value\n});\n        \n// //assertion Node\n// assert.strictEqual(todoText, \"Three\")\n//assert using chai should\ntodoText.should.equal(\"Three\");\n//Something to do \nawait new Promise(res => setTimeout(res, 10000));\nlet title = await driver.getTitle();\nconsole.log('Title is:',todoText);\n        \n//Close the browser\nawait driver.quit();",
+              "err": {
+                "message": "AssertionError: expected 'Open this select menu' to equal 'Three'",
+                "estack": "AssertionError: expected 'Open this select menu' to equal 'Three'\n    at Context.<anonymous> (test\\test3.js:79:33)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": "- Open this select menu\n+ Three\n"
+              },
+              "uuid": "d7b9166a-d9a2-48b6-8f47-f006d609b08b",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2e466fc0-5b00-4d48-82e3-fd39df149846",
+            "d7b9166a-d9a2-48b6-8f47-f006d609b08b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3224,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "581f295a-4a85-4758-b3df-9223a348bc88",
           "title": "add ANOTHER todo tests",
-          "fullFile": "C:\\Selenium\\SeleniumTestingProjects\\SeleniumTraining\\anotherTest.js",
-          "file": "\\anotherTest.js",
+          "fullFile": "C:\\Selenium\\SeleniumTestingProjects\\SeleniumTraining\\test\\anotherTest.js",
+          "file": "\\test\\anotherTest.js",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
@@ -124,7 +147,7 @@
               "title": "succesfully adds ANOTHER todo application",
               "fullTitle": "add ANOTHER todo tests succesfully adds ANOTHER todo application",
               "timedOut": null,
-              "duration": 11728,
+              "duration": 11738,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -133,7 +156,7 @@
               "context": null,
               "code": "//Launch Browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n        \n//To fetch some url.\nawait driver?.get(\"https://www.selenium.dev/selenium/web/web-form.html\");\n\n// To send a search query by passing the value in searchString.\nawait driver\n?.findElement(By?.css('[name=\"my-file\"]'))\n?.sendKeys(\"C:\\\\Users\\\\alan_\\\\Downloads\\\\Peepo.png\");\n//assertion\nlet fileName = await driver\n?.findElement(By?.css(' [name=\"my-file\"]'))\n?.getAttribute(\"value\")\n.then(function(value){\n        return value.match(/(?<=[\\w\\\\])([\\w])+(?=\\.)/g)[0]\n});\n\n        \n// //assertion Node\n// assert.strictEqual(todoText, \"Three\")\n//assert using chai should\nfileName.should.include(\"Peepo\")\n//Something to do \nawait new Promise(res => setTimeout(res, 10000));\nlet title = await driver.getTitle();\nconsole.log('Title is :',title);\nconsole.log('File name is :',fileName);\n        \n//Close the browser\nawait driver.quit();",
               "err": {},
-              "uuid": "380654e8-6f5a-471c-9c03-aa6b25b2e8f1",
+              "uuid": "b43587d3-54c8-49ee-a093-f370f7ff7f55",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -141,12 +164,12 @@
           ],
           "suites": [],
           "passes": [
-            "380654e8-6f5a-471c-9c03-aa6b25b2e8f1"
+            "b43587d3-54c8-49ee-a093-f370f7ff7f55"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11728,
+          "duration": 11738,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
